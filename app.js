@@ -89,3 +89,6 @@ app.use( express.static('public'))
 
 
 app.listen(process.env.PORT)
+
+
+module.exports = app;
