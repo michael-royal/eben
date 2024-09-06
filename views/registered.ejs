@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/lisaheader.ejs') %>
+
+    <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary m-4" data-bs-toggle="modal" data-bs-target="#myModal">
+    Click Me
+  </button>
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <img src="/images/images.jfif" alt="">
+            <p><h2><%= name %></h2></p>
+                <p>You are welcome to Droid, thanks for signing up. To access all functional features of Droid visit the log in page and log in to the system with your email or phone number and your password THANK YOU !!! have a wonderful Experience</p>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+    
+
+    <%- include('./partials/script.ejs') %>
+</body>
+</html>

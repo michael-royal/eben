@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+<%- include('./partials/loggedinheader.ejs') %>
+    
+<div class="container">
+    <button id="startrecording">
+      <img id="startrec" src="/icons/record.png" alt="" />
+    </button>
+
+    <textarea
+      name="textdiv"
+      id="textdiv"
+      cols="28"
+      rows="14"
+      placeholder="Speech in text output"
+    ></textarea>
+
+
+    <button class="btn btn-war btn-block btn-danger btn-lg mt-4 mb-4 ms-2 ">Clear Textarea</button>
+  </div>
+
+<%- include('./partials/script.ejs') %>
+<script src="/javascripts/speech.js"></script>
+</body>
+</html>

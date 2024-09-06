@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/loggedinheader.ejs') %>
+
+    <section class="container">
+           
+        <section>
+            <p>
+           <a href="/text" class="btn btn-primary mt-3 ">Text-to-Speech</a>
+                <p class="hey ms-2">
+                    Click to above button to access our text to speech functional feature.  With a varieties of voices to choose from, this feature allows you to transform typed out text in to sound.
+                </p>
+        
+            <a href="/speech" class="btn btn-primary m-1 ">Speech-Recognition</a>
+            <p class="hey ms-2">
+                Click to above button to access our speech recognition functional feature. This feature uses your system mic to capture spoken words and convert them to text in real time. 
+            </p>
+
+
+         
+        </p>
+        </section>
+      
+      </section>
+
+
+    <%- include('./partials/script.ejs') %>
+</body>
+</html>

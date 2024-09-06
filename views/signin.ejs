@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+
+
+<body>
+     <%- include('./partials/lisaheader.ejs') %>
+
+    
+    <div class="container mt-4">
+  
+      <form action="/registered" method="post">
+        <% if (message){ %>
+          <p class="alert-danger alert "><%= message %></p>
+
+        <%}%>
+        <label class="ms-1 mt-1" for="name"> Name </label>
+        <input
+          type="text"
+          class="form-control mt-2"
+          placeholder="Input a username"
+          id="name"
+          name="name"
+        />
+
+        <label class="ms-1 mt-1" for="phone"> Phone </label>
+        <input
+          type="text"
+          class="form-control mt-2"
+          placeholder="Input a Mobile/Phone Number"
+          id="phone"
+          name="phone"
+        />
+
+        <label class="ms-1 mt-1" for="email">Email</label>
+        <input type="email" class="form-control mt-2" id="email" name="email" />
+
+        <label class="ms-1 mt-1" for="password">Password</label>
+        <input
+          type="password"
+          class="form-control mt-2"
+          id="password"
+          name="password"
+        />
+
+        <label class="ms-1 mt-1" for="pwdconfirm">Confirm Password</label>
+        <input
+          type="password"
+          class="form-control mt-2"
+          id="pwdconfirm"
+          name="confirm"
+        />
+
+        <input type="submit" class="form-control text-light bg-primary mt-4" value="Submit" />
+      </form>
+    </div>
+
+    <%- include('./partials/script.ejs') %>
+
+  
+
+</body>
+</html>

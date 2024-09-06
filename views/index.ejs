@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/lisaheader.ejs') %>
+   <section id="slideshow">
+            <div class="s1 slides"></div>
+            <div class="s2 slides"></div>
+            <div class="s3 slides"></div>
+          </section>
+
+    <div class="container">
+    
+        <div class="contained">
+         
+  
+          <section class="about">
+           
+            <section>
+                <p>
+               <h2>About Us </h2>
+              <span class="dro">
+                DROID </span>
+                is a free open source web-application available for use by
+                every and any webuser. With great ease of access we offer:
+                <ul class="about-list">
+                  <li class="about-list-item">
+                    A text-to-speech synthesis with a variety of languages to
+                    choose from
+                  </li>
+                  <li class="about-list-item">
+                    A voice recognition programme that captures and allows audio
+                    to be transformed to text in real time
+                  </li>
+                </ul>
+              <h2>Our Misson</h2>
+              Our sole aim is to establish a ground base through which the deaf and the dumb can communicate effectively with every other person without the going through the stressfull and ambigious process of learning different sign languages in other to communicate
+  
+  
+              <div class="d-grid">
+                <a class="btn btn-primary p-2 mt-2" href="/about">About Developer</a>
+              </div>
+            </p>
+            </section>
+          
+          </section>
+           <section id="how-to-use">
+            <ul id="how">
+              <h4>Step 1</h4>
+              <li class="how-item">Click on the sign up button and sign up (if already a user click on log in )
+              </li>
+              <a href="/register" class=""></a>
+              <h4>Step 2</h4>
+              <li class="how-item">When logged in you will be taken to a page where you will choose from the list of features the one you would like to access</li>
+              <li class="how-item">Make a selection from either text-to-speech or speech-recognition</li>
+              <h4>Text-to-Speech</h4>
+              <li class="how-item">
+                Type in your message in the input box 
+              </li>
+              <li class="how-item">Select Language</li>
+              <li class="how-item">Click on SPEAK</li>
+              <h4>Speech-Recognition</h4>
+              <li class="how-item">Click on the mic button to start the speech recognition </li>
+            </ul>
+           </section>
+        </div>
+      </div>
+
+
+    <%- include('./partials/script.ejs') %>
+    <script src="/javascripts/index.js"></script>
+</body>
+</html>

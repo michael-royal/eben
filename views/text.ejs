@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+<%- include('./partials/loggedinheader.ejs') %>
+
+<div class="container">
+   
+  
+        <form id="main-form">
+          <textarea
+            type="text"
+            name="textd"
+            id="textd"
+            placeholder=" Input your text"
+            cols="30"
+            rows="10"
+          ></textarea>
+
+          <select name="lan" id="lan" class="mt-4">
+            <option>Change Language</option>
+          </select>
+
+          <input type="submit" value="Speak" id="speak"  class="btn btn-primary p-2 mt-4 form-control"/>
+        </form>
+    
+
+  </div>
+
+<%- include('./partials/script.ejs') %>
+
+<script src="/javascripts/text.js"></script>
+</body>
+</html>
